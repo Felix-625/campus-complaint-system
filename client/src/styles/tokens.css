@@ -1,0 +1,122 @@
+:root {
+  /* ==========================================================================
+     Accessible Education Palette (WCAG 2.2 Checked)
+     * This is the ONLY file in the project permitted to contain raw hex values. *
+     ========================================================================== */
+  --palette-graphite: #1C1F3A;
+  --palette-notebook: #FAF7F0;
+  --palette-chalk-green: #1B5845;
+  --palette-highlighter: #FFE45C;
+  --palette-ruby: #B1223F;
+  --palette-periwinkle: #C9CCFF;
+
+  /* ==========================================================================
+     Semantic Surface Tokens
+     ========================================================================== */
+  --color-bg: var(--palette-notebook);
+  --color-surface: var(--palette-notebook);
+  --color-surface-alt: var(--palette-periwinkle);
+  --color-sidebar-bg: var(--palette-graphite);
+
+  /* ==========================================================================
+     Semantic Text Tokens
+     ========================================================================== */
+  --color-text: var(--palette-graphite);
+  /* Graphite mixed with notebook to maintain >= 4.5:1 contrast on notebook */
+  --color-text-muted: color-mix(in srgb, var(--palette-graphite) 75%, var(--palette-notebook));
+  --color-text-on-dark: var(--palette-notebook);
+  --color-text-on-primary: var(--palette-notebook);
+  --color-text-on-accent: var(--palette-graphite);
+
+  /* ==========================================================================
+     Semantic Action Tokens
+     ========================================================================== */
+  --color-primary: var(--palette-chalk-green);
+  --color-primary-hover: color-mix(in srgb, var(--palette-chalk-green) 85%, var(--palette-graphite));
+  --color-accent: var(--palette-highlighter);
+  --color-accent-hover: color-mix(in srgb, var(--palette-highlighter) 85%, var(--palette-graphite));
+  --color-danger: var(--palette-ruby);
+  --color-danger-hover: color-mix(in srgb, var(--palette-ruby) 85%, var(--palette-graphite));
+  --color-info: var(--palette-periwinkle);
+
+  /* ==========================================================================
+     Borders & Focus Rings
+     ========================================================================== */
+  --color-border: color-mix(in srgb, var(--palette-graphite) 20%, var(--palette-notebook));
+  --color-border-strong: color-mix(in srgb, var(--palette-graphite) 40%, var(--palette-notebook));
+  --color-focus-ring: var(--palette-highlighter);
+  --color-focus-offset: var(--palette-graphite);
+
+  /* ==========================================================================
+     Status Tokens (-bg, -fg, -border pairs)
+     ========================================================================== */
+  --status-submitted-bg: var(--palette-notebook);
+  --status-submitted-fg: var(--palette-graphite);
+  --status-submitted-border: var(--palette-graphite);
+
+  --status-under-review-bg: var(--palette-highlighter);
+  --status-under-review-fg: var(--palette-graphite);
+  --status-under-review-border: color-mix(in srgb, var(--palette-graphite) 30%, var(--palette-highlighter));
+
+  --status-in-progress-bg: var(--palette-periwinkle);
+  --status-in-progress-fg: var(--palette-graphite);
+  --status-in-progress-border: color-mix(in srgb, var(--palette-graphite) 30%, var(--palette-periwinkle));
+
+  --status-resolved-bg: var(--palette-chalk-green);
+  --status-resolved-fg: var(--palette-notebook);
+  --status-resolved-border: var(--palette-chalk-green);
+
+  --status-rejected-bg: var(--palette-ruby);
+  --status-rejected-fg: var(--palette-notebook);
+  --status-rejected-border: var(--palette-ruby);
+
+  --status-overdue: var(--palette-ruby);
+  --status-overdue-bg: color-mix(in srgb, var(--palette-ruby) 15%, var(--palette-notebook));
+  --status-overdue-fg: var(--palette-ruby);
+  --status-overdue-border: var(--palette-ruby);
+
+  /* ==========================================================================
+     Chart Tokens
+     ========================================================================== */
+  --chart-1: var(--palette-chalk-green);
+  --chart-2: var(--palette-periwinkle);
+  --chart-3: var(--palette-highlighter);
+  --chart-4: var(--palette-ruby);
+  --chart-5: var(--palette-graphite);
+
+  /* ==========================================================================
+     Non-Color Tokens
+     ========================================================================== */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-pill: 9999px;
+
+  --shadow-sm: 0 1px 2px 0 color-mix(in srgb, var(--palette-graphite) 8%, transparent);
+  --shadow-md: 0 4px 6px -1px color-mix(in srgb, var(--palette-graphite) 12%, transparent), 0 2px 4px -2px color-mix(in srgb, var(--palette-graphite) 8%, transparent);
+
+  --sidebar-width: 16rem;
+  --sidebar-width-collapsed: 4rem;
+  --z-sidebar: 40;
+  --z-overlay: 50;
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
